@@ -1,13 +1,21 @@
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
 }
 
 #controls {
-  background-color: black;
+  background-color: blue;
   width: 100%;
   margin: 0;
   padding: 10px;
+}
+
+#sidebar {
+  display: none;
 }
 
 body.example {
@@ -20,17 +28,30 @@ div.example {
 
 div.example#title {
   margin-top: 0;
+  margin-bottom: 15px;
   height: 100px;
   width: 100%;
   text-align: center;
-  background-color: #ffffcc;
+  background-color: #ffe6b3;
 }
 
 div.example#sidebar {
   float: left;
-  background-color: #83b34d;
+  background-color: #00b359;
   width: 20%;
   height: 100%;
+}
+
+.example#sidebar h4 {
+  color: #ffe6b3
+}
+
+.example#sidebar h5 {
+  color: white;
+}
+
+.example#sidebar a *{
+  color: blue;
 }
 
 div.example#content {

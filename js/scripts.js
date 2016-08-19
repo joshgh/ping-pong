@@ -46,12 +46,14 @@ $(document).ready(function() {
     $("div").removeClass("container");
     $("body").addClass("example");
     $("div").addClass("example");
+    $("#sidebar").show();
   });
 
   $("#exampleCssOff").click(function(){
     $("div").addClass("container");
     $("body").removeClass("example");
     $("div").removeClass("example");
+    $("#sidebar").hide();
   });
 
 
@@ -61,9 +63,9 @@ $(document).ready(function() {
     var input = $("#numInput").val();
     var inputArray = countTo(input);
     replaceArray(inputArray);
-    $("#results ul").text("");
+    $("ul#results").text("");
     inputArray.forEach(function(element){
-      $("#results ul").append("<li>" + element + "</li>")
+      $("ul#results").append("<li>" + element + "</li>")
     });
   });
 });
