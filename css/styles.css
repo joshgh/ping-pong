@@ -1,0 +1,20 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body.example {
+  background-color: #d9d9d9;
+}
+
+div.example#title {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffcc;
+}
+
+div.example#sidebar {
+  float: left;
+  background-color: #83b34d;
+  width: 20%;
+}
