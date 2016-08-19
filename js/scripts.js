@@ -41,6 +41,21 @@ function replaceArray(numArray){
 }
 
 $(document).ready(function() {
+
+  $("#exampleCssOn").click(function(){
+    $("div").removeClass("container");
+    $("body").addClass("example");
+    $("div").addClass("example");
+  });
+
+  $("#exampleCssOff").click(function(){
+    $("div").addClass("container");
+    $("body").removeClass("example");
+    $("div").removeClass("example");
+  });
+
+
+
   $("form").submit(function(event){
     event.preventDefault();
     var input = $("#numInput").val();

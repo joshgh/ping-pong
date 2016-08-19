@@ -3,11 +3,22 @@ body {
   height: 100%;
 }
 
+#controls {
+  background-color: black;
+  margin: 5px 0;
+}
+
 body.example {
   background-color: #d9d9d9;
 }
 
+div.example {
+  padding: 10px;
+}
+
 div.example#title {
+  margin-top: 0;
+  padding: 20px;
   width: 100%;
   text-align: center;
   background-color: #ffffcc;
@@ -17,4 +28,5 @@ div.example#sidebar {
   float: left;
   background-color: #83b34d;
   width: 20%;
+  height: 100%;
 }
