@@ -39,6 +39,14 @@ function replaceThree(number){
   }
 }
 
+function replaceFive(number){
+  if(divByFive(number)){
+    return "pong"
+  } else {
+    return number;
+  }
+}
+
 $(document).ready(function() {
 
 });
