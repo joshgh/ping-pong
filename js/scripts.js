@@ -15,6 +15,14 @@ function divByThree(number){
   }
 }
 
+function divByFive(number){
+  if(number % 5 === 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $(document).ready(function() {
 
 });
