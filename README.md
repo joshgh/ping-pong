@@ -66,4 +66,4 @@ _This webpage uses JavaScript and the jQuery library for functionality_
 
 *MIT License*
 
-Copyright (c) 2016 **_Joshua Huffan_**
+Copyright (c) 2016 **_Joshua Huffman_**
