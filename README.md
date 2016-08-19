@@ -38,7 +38,7 @@ _This webpage allows a user to input a number and counts up to it, replacing num
   * Example input: 60
   * Example output: "ping-pong"
 
-* It will perform the above replacements for an array of multiple numbers.
+* It will perform the above replacements for multiple numbers in a row.
   * Example input: [1,2,5,6,10,11,12,14,15,19,20]
   * Example output: [1,2,"pong", "ping", "pong", 11, "ping", 14, "ping-pong", 19, "pong"]
 
