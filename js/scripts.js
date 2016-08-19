@@ -31,15 +31,24 @@ function replaceFifteen(number){
   }
 }
 
-function replaceArray(inputArray){
-  inputArray.forEach(function(element, index){
-    inputArray[index] = replaceFifteen(inputArray[index]);
-    inputArray[index] = replaceFive(inputArray[index]);
-    inputArray[index] = replaceThree(inputArray[index]);
+function replaceArray(numArray){
+  numArray.forEach(function(element, index){
+    numArray[index] = replaceFifteen(numArray[index]);
+    numArray[index] = replaceFive(numArray[index]);
+    numArray[index] = replaceThree(numArray[index]);
   });
-  return inputArray;
+  return numArray;
 }
 
 $(document).ready(function() {
-
+  $("form").submit(function(event){
+    event.preventDefault();
+    var input = $("#numInput").val();
+    var inputArray = countTo(input);
+    replaceArray(inputArray);
+    $("#results ul").text("");
+    inputArray.forEach(function(element){
+      $("#results ul").append("<li>" + element + "</li>")
+    });
+  });
 });
