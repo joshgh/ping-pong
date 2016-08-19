@@ -1,4 +1,4 @@
-
+// Business logic
 function countTo(number){
   var numArray = [];
   for(var i = 1; i <= number; i++){
@@ -8,24 +8,24 @@ function countTo(number){
 }
 
 function replaceThree(number){
-  if(number % 3 === 0){
-    return "ping"
+  if (number % 3 === 0) {
+    return "ping";
   } else {
     return number;
   }
 }
 
 function replaceFive(number){
-  if(number % 5 === 0){
-    return "pong"
+  if (number % 5 === 0) {
+    return "pong";
   } else {
     return number;
   }
 }
 
 function replaceFifteen(number){
-  if(number % 15 === 0){
-    return "ping-pong"
+  if (number % 15 === 0) {
+    return "ping-pong";
   } else {
     return number;
   }
@@ -40,23 +40,19 @@ function replaceArray(numArray){
   return numArray;
 }
 
+//User Interface logic
 $(document).ready(function() {
-
   $("#exampleCssOn").click(function(){
     $("div").removeClass("container");
     $("body, div").removeClass("mine");
     $("body, div").addClass("example");
-    $("#sidebar").show();
   });
 
   $("#exampleCssOff").click(function(){
     $("div").addClass("container");
     $("body, div").removeClass("example");
     $("body, div").addClass("mine");
-    $("#sidebar").hide();
   });
-
-
 
   $("form").submit(function(event){
     event.preventDefault();

@@ -25,9 +25,14 @@
     <div id="content" class="container mine">
       <h2>Let's Play</h2>
       <h4>Rules:</h4>
-      <p id="intro">Please enter a number into the box below.  All of the numbers from 1 up to the number entered will be displayed, but numbers divisible by 3 will be replaced with the word "ping", numbers divisible by 5 will be replaced with the word "pong", and numbers divisible by 15 will be replaced with the word "ping-pong"</p>
+      <p>Please enter a number into the box below. All of the numbers from 1 up to the number entered will be displayed, but:</p>
+      <ul>
+          <li>Numbers divisible by 3 will be replaced with the word "ping"</li>
+          <li>Numbers divisible by 5 will be replaced with the word "pong"</li>
+          <li>Numbers divisible by 15 will be replaced with the word "ping-pong"</li>
+        </ul>
       <form>
-        <label for="numInput">Please enter your number</label>
+        <label for="numInput">Please enter your number:</label>
         <input id="numInput" type="number" step="1" min="0">
         <button type="submit" class="btn btn-primary">Count</button>
       </form>
