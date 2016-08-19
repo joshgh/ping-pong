@@ -31,6 +31,15 @@ function replaceFifteen(number){
   }
 }
 
+function replaceArray(inputArray){
+  inputArray.forEach(function(element, index){
+    inputArray[index] = replaceFifteen(inputArray[index]);
+    inputArray[index] = replaceFive(inputArray[index]);
+    inputArray[index] = replaceThree(inputArray[index]);
+  });
+  return inputArray;
+}
+
 $(document).ready(function() {
 
 });
