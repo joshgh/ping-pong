@@ -44,15 +44,15 @@ $(document).ready(function() {
 
   $("#exampleCssOn").click(function(){
     $("div").removeClass("container");
-    $("body").addClass("example");
-    $("div").addClass("example");
+    $("body, div").removeClass("mine");
+    $("body, div").addClass("example");
     $("#sidebar").show();
   });
 
   $("#exampleCssOff").click(function(){
     $("div").addClass("container");
-    $("body").removeClass("example");
-    $("div").removeClass("example");
+    $("body, div").removeClass("example");
+    $("body, div").addClass("mine");
     $("#sidebar").hide();
   });
 
