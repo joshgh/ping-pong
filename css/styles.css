@@ -5,7 +5,9 @@ body {
 
 #controls {
   background-color: black;
-  margin: 5px 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
 }
 
 body.example {
@@ -18,7 +20,7 @@ div.example {
 
 div.example#title {
   margin-top: 0;
-  padding: 20px;
+  height: 100px;
   width: 100%;
   text-align: center;
   background-color: #ffffcc;
@@ -28,5 +30,11 @@ div.example#sidebar {
   float: left;
   background-color: #83b34d;
   width: 20%;
+  height: 100%;
+}
+
+div.example#content {
+  float: left;
+  width: 80%;
   height: 100%;
 }
