@@ -1,22 +1,54 @@
-# _{Application Name}_
+# _Ping Pong_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Takes a numerical input and counts up to it while replacing some numbers, August 19 2016_
 
-#### By _**{List of contributors}**_
+#### By _**Joshua Huffman**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This webpage takes a number from the user and counts up to it, replacing numbers divisible by 3 with "ping", replacing numbers divisible by 5 with "pong", and replacing numbers divisible by 15 with "ping-pong". This webpage was created as the independent project for week 3 of the Epicodus Intro to Programming class._
+
+## Specifications
+
+* It can count up to the provided number.
+  * example input: 2
+  * example output: [1,2,3]
+
+* It determines whether a number is divisible by 3.
+  * example input: 6
+  * example output: true
+
+* It determines whether a number is divisible by 5.
+  * example input: 20
+  * example output: true
+
+* It determines whether a number is divisible by 15.
+  * example input: 30
+  * example output: true
+
+* It replaces numbers divisible by 3 with "ping".
+  * example input: 9
+  * example output: "ping"
+
+* It replaces numbers divisible by 5 with "pong".
+  * example input: 10
+  * example output: "pong"
+
+* It replaces numbers divisible by 15 with "ping-pong".
+  * example input: 60
+  * example output: "ping-pong"
+
+* It will perform the above replacements for an array of multiple numbers.
+  * example input: [1,2,5,6,10,11,12,14,15,19,20]
+  * example output: [1,2,"pong", "ping", "pong", 11, "ping", 14, "ping-pong", 19, "pong"]
+
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository to your computer (type "git clone https://github.com/joshgh/ping-pong" at a terminal prompt if you have git installed)_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Open index.html in your web browser of choice_
 
 ## Known Bugs
 
@@ -24,14 +56,14 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Please contact me at j.m.huffman@gmail.com with any questions or comments_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This webpage uses JavaScript and the jQuery library for functionality_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT License*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_Joshua Huffan_**
