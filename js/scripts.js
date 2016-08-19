@@ -23,6 +23,14 @@ function divByFive(number){
   }
 }
 
+function divByFifteen(number){
+  if(number % 15 === 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $(document).ready(function() {
 
 });
