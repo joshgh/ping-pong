@@ -7,32 +7,8 @@ function countTo(number){
   return numArray;
 }
 
-function divByThree(number){
-  if(number % 3 === 0){
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function divByFive(number){
-  if(number % 5 === 0){
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function divByFifteen(number){
-  if(number % 15 === 0){
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function replaceThree(number){
-  if(divByThree(number)){
+  if(number % 3 === 0){
     return "ping"
   } else {
     return number;
@@ -40,7 +16,7 @@ function replaceThree(number){
 }
 
 function replaceFive(number){
-  if(divByFive(number)){
+  if(number % 5 === 0){
     return "pong"
   } else {
     return number;
@@ -48,7 +24,7 @@ function replaceFive(number){
 }
 
 function replaceFifteen(number){
-  if(divByFifteen(number)){
+  if(number % 15 === 0){
     return "ping-pong"
   } else {
     return number;
