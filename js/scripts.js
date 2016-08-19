@@ -47,6 +47,14 @@ function replaceFive(number){
   }
 }
 
+function replaceFifteen(number){
+  if(divByFifteen(number)){
+    return "ping-pong"
+  } else {
+    return number;
+  }
+}
+
 $(document).ready(function() {
 
 });
