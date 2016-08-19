@@ -31,6 +31,14 @@ function divByFifteen(number){
   }
 }
 
+function replaceThree(number){
+  if(divByThree(number)){
+    return "ping"
+  } else {
+    return number;
+  }
+}
+
 $(document).ready(function() {
 
 });
