@@ -16,8 +16,9 @@ body.example {
 #controls {
   background-color: #ccffff;
   width: 100%;
-  margin: 0 0 10px;
+  margin: 0;
   padding: 10px;
+  border: 1px solid black;
 }
 
 .mine#title {
@@ -27,7 +28,6 @@ body.example {
 }
 
 .example#title {
-  margin-top: 0;
   margin-bottom: 15px;
   height: 100px;
   width: 100%;
